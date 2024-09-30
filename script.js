@@ -12,13 +12,16 @@ var close = document.getElementById("close");
 // Array to store Objects
 const myLibrary = [];
 
-// Book Object Constructor Function
-function Book(name, author, pagenum, status, rating) {
-  this.title = name;
-  this.author = author;
-  this.pages = pagenum;
-  this.status = status;
-  this.rating = rating;
+// Book Class
+class Book{
+  constructor(name, author, pagenum, status, rating){
+    this.title = name;
+    this.author = author;
+    this.pages = pagenum;
+    this.status = status;
+    this.rating = rating;
+  }
+
 }
 
 // This function adds a row  to the table when the add button is clicked
